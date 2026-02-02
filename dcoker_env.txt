@@ -3,7 +3,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 # Django Configuration
 DEBUG=True
-SECRET_KEY=Infracraft_Secret_Key_2024
+SECRET_KEY=Infracraft_Secret_Key_Jithin
 ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
 
 # Database Configuration (Default SQLite for this project)
