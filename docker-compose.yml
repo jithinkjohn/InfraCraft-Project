@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  # The Application
+  app:
+    image: infracraft-app
+    restart: always
+    expose:
+      - "5005"
+
+  # The Nginx Load Balancer
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:Z
+    depends_on:
+      - app

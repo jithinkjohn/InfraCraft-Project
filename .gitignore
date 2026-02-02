@@ -15,3 +15,10 @@ env
 .env
 node_modules
 yarn.lock
+# --- DevOps / Terraform Additions ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
+.volumes/
