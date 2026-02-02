@@ -1,3 +1,14 @@
 # env for docker
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+# Django Configuration
+DEBUG=True
+SECRET_KEY=Infracraft_Secret_Key_2024
+ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+
+# Database Configuration (Default SQLite for this project)
+DB_ENGINE=django.db.backends.sqlite3
+DB_NAME=db.sqlite3
+
+# Gunicorn / Production settings
+PORT=5005
